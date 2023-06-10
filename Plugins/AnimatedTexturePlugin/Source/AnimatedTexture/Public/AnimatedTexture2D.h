@@ -92,7 +92,7 @@ public:	// UTexture Interface
 	virtual EMaterialValueType GetMaterialType() const override { return MCT_Texture2D; }
 
 public:	// FTickableGameObject Interface
-	virtual void Tick(float DeltaTime) override;
+	virtual void Tick(float DeltaTime) override;virtual ETextureClass GetTextureClass() const override { return ETextureClass::Array; }
 	virtual bool IsTickable() const override
 	{
 		return true;
